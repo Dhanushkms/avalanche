@@ -42,8 +42,8 @@ To compile the code, click on the "Solidity Compiler" tab in the left-hand sideb
 Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "OwnershipContract" contract from the dropdown menu, and then click on the "Deploy" button.
 
 Once the contract is deployed, you can try calling the onlyOwner(), onwerHere(), and Owner() functions to see how they work. However, keep in mind that only the owner of the contract will be able to call these functions successfully.
-Authors 
+## Authors 
 Dhanush KM
 dhamushkm@gmail.com
-License
+## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
