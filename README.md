@@ -5,6 +5,22 @@ This Solidity program is a simple ownership contract that demonstrates the basic
 
 This Solidity program is a simple ownership contract that demonstrates the basic syntax and functionality of ownership control in Solidity. The purpose of this program is to serve as a starting point for those who are new to Solidity and want to get a feel for how to implement ownership control in their smart contracts.The contract has three functions: onlyOwner(), onwerHere(), and Owner(), which can only be called by the owner of the contract.
 
+## Brief code Explanation
+The code you provided is a simple Solidity contract that implements ownership. It has one state variable, owner, which stores the address of the current owner of the contract.
+
+The constructor of the contract sets the owner state variable to the address of the deployer of the contract. This means that the person who deploys the contract is automatically the owner.
+
+The contract has three functions:
+
+onlyOwner(): This function can only be called by the owner of the contract. It uses the msg.sender variable to check the address of the caller and reverts if the caller is not the owner.
+
+onwerHere(): This function is similar to onlyOwner(), but it uses an if statement instead of a require() statement. This means that the function will revert if the caller is not the owner, but it will also return normally if the caller is the owner.
+
+Owner(): This function uses the assert() statement to check the address of the caller and reverts if the caller is not the owner.
+The assert() statement is stronger than the require() statement in that it will cause the contract to revert even if the contract is running out of gas. This means that the Owner() function is guaranteed to revert if the caller is not the owner, even if the contract is running out of gas.
+
+Overall, this contract is a simple example of how to implement ownership in Solidity. It can be used as a starting point for more complex contracts that need to restrict certain functions to the owner of the contract.
+
 ## Getting Started:
 ### Executing Program
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
